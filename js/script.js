@@ -1,5 +1,31 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
+// Created by: Tymofii
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
+
+function multiplyNumbers() {
+
+  const firstNumber = parseInt(document.getElementById('firstNumberInput').value);
+  let secondNumber = parseInt(document.getElementById('secondNumberInput').value);
+
+  let result = 0;
+  let counter = 0;
+
+  let isNegative = false;
+  if (secondNumber < 0) {
+    isNegative = true;
+    secondNumber = -secondNumber;
+  }
+
+  while (counter < secondNumber) {
+    result += firstNumber;
+    counter++;
+  }
+
+  if (isNegative) {
+    result = -result;
+  }
+
+  document.getElementById("multiplicationResult").innerHTML = "<p>" + firstNumber + " x " + secondNumber + " = " + result + "</p>";
+}
