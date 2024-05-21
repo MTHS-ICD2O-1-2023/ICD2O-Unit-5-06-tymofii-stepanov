@@ -1,8 +1,11 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Tymofii
-// Created on: Sep 2020
+// Created on: Sep 2024
 // This file contains the JS functions for index.html
+
+
+"use strict";
 
 function multiplyNumbers() {
 
@@ -10,7 +13,7 @@ function multiplyNumbers() {
   let secondNumber = parseInt(document.getElementById('secondNumberInput').value);
 
   let result = 0;
-  let counter = 0;
+  let counter = 0
 
   let isNegative = false;
   if (secondNumber < 0) {
