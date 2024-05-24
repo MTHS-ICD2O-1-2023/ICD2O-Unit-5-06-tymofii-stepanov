@@ -12,7 +12,7 @@ function multiplyNumbers() {
   const firstNumber = parseInt(document.getElementById('firstNumberInput').value);
   let secondNumber = parseInt(document.getElementById('secondNumberInput').value);
 
-  let result = 0;
+  let result = 0
   let counter = 0
 
   let isNegative = false;
