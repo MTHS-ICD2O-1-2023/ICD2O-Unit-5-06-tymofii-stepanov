@@ -12,12 +12,11 @@ function multiplyNumbers() {
   const firstNumber = parseInt(document.getElementById('firstNumberInput').value);
   let secondNumber = parseInt(document.getElementById('secondNumberInput').value);
 
-  let result = 0
-  let counter = 0
+  let result = 0;
+  let counter = 0;
 
-  let isNegative = false;
-  if (secondNumber < 0) {
-    isNegative = true;
+  let isNegative = secondNumber < 0;
+  if (isNegative === true) {
     secondNumber = -secondNumber;
   }
 
@@ -26,9 +25,10 @@ function multiplyNumbers() {
     counter++;
   }
 
-  if (isNegative) {
+  if (isNegative === true) {
     result = -result;
   }
 
   document.getElementById("multiplicationResult").innerHTML = "<p>" + firstNumber + " x " + secondNumber + " = " + result + "</p>";
 }
+
